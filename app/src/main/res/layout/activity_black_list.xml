@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_black_list"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liuhaoyuan.phonemanager.activity.BlackListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黑名单管理" />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_action_add"
+            android:id="@+id/btn_blacklist_add"
+            />
+    </RelativeLayout>
+    <ListView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/lv_blacklist"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

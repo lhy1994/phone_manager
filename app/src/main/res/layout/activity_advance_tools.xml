@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advance_tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.liuhaoyuan.phonemanager.activity.AdvanceToolsActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="高级工具" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="queryAddress"
+        android:text="归属地查询" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="smsBackUp"
+        android:text="短信备份" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="queryNumber"
+        android:text="常用号码查询" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="proLock"
+        android:text="程序锁" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_progress_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liuhaoyuan.phonemanager.activity.ProgressManagerActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进程管理" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_progress_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进程总数"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ram"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_select_all"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/btn_select_inverse"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="反选" />
+
+        <Button
+            android:id="@+id/btn_swipe"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="清理" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置" />
+    </LinearLayout>
+</LinearLayout>

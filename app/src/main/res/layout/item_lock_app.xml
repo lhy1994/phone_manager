@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/iv_lock_app"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_lock_app"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_lock_app"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lock"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_islock"
+        android:layout_marginTop="5dp"
+        />
+</RelativeLayout>

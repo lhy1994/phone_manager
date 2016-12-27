@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.liuhaoyuan.phonemanager.activity.Setup2Activity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="2.手机卡绑定" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="通过绑定SIM卡:" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="下次重启手机如果发现SIM卡变化，就会发送报警短信" />
+
+    <com.example.liuhaoyuan.phonemanager.views.SettingItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:off_content="SIM卡没有绑定"
+        app:on_content="SIM已经绑定"
+        android:id="@+id/setting_setup2"
+        app:title="点击绑定SIM卡"></com.example.liuhaoyuan.phonemanager.views.SettingItemView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/icon_circle" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/icon_circle_color" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/icon_circle" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/icon_circle" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/phone" />
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:onClick="previousPage"
+            android:text="上一步" />
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:onClick="nextPage"
+            android:text="下一步" />
+    </RelativeLayout>
+</LinearLayout>

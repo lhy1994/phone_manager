@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_query_address"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.liuhaoyuan.phonemanager.activity.QueryAddressActivity">
+<TextView
+    style="@style/TitleStyle"
+    android:text="归属地查询"
+
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:hint="请输入号码"
+        android:id="@+id/et_query_number"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:onClick="query"
+        android:layout_marginLeft="10dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/tv_query_result"
+        />
+</LinearLayout>
